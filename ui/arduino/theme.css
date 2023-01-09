@@ -50,8 +50,19 @@ img {
   display: flex;
   flex-direction: row;
   background: var(--teal);
-  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+  padding: 1.5rem 0.5rem 0.75rem 0.5rem;
+  user-select: none;
 }
+
+#titlebar {
+  display: block;
+  position: fixed;
+  height: 32px;
+  width: 100%;
+  background: var(--teal);
+  -webkit-app-region: drag;
+}
+
 
 .toolbar-button-wrapper {
   display: flex;
@@ -285,19 +296,25 @@ img {
 
 #message {
   position: fixed;
+  display: block;
   bottom: 1rem;
-  width: 100%;
+  width: 25%;
   max-width: 80%;
   padding: 1rem;
   background: var(--yellow);
-  z-index: 9999;
   text-align: center;
   left: 50%;
   transform: translate(-50%, 100%);
   opacity: 0;
   transition: all 0.25s;
+  user-select: none;
 }
 #message.show {
   opacity: 1;
   transform: translate(-50%, 0%);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

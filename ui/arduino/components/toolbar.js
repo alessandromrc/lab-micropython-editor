@@ -73,6 +73,7 @@ function Toolbar(state, emit) {
   })
 
   return html`
+    <header id="titlebar"></header>
     <div id="toolbar">
       ${connect}
       <div class="toolbar-spacing"></div>

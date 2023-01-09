@@ -39,7 +39,7 @@
 	"dependencies": {
 		"about-window": "^1.15.2",
 		"mkdirp": "^1.0.3",
-		"serialport": "^10.4.0"
+		"serialport": "^10.5.0"
 	},
 	"engines": {
 		"node": "16"

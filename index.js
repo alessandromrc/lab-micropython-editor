@@ -97,6 +97,11 @@ function createWindow () {
   win = new BrowserWindow({
     width: 700,
     height: 640,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#008184',
+      symbolColor: '#FFFFFF'
+    },
     webPreferences: {
       nodeIntegration: true,
       webSecurity: false,
@@ -107,6 +112,7 @@ function createWindow () {
   // and load the index.html of the app.
   win.loadFile('ui/arduino/index.html')
 }
+
 
 // TODO: Loading splash screen
 
